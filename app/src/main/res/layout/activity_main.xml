@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.manasa.chatbot.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:background="@drawable/grad_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ll1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="113dp">
+
+            <TextView
+                android:text="Welcome!"
+                android:layout_width="match_parent"
+                android:layout_height="159dp"
+                android:id="@+id/welcome_msg"
+                android:fontFamily="sans-serif"
+                android:textSize="55sp"
+                android:gravity="center_horizontal|center"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_weight="0.10"
+            android:weightSum="1"
+            android:id="@+id/ll2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                android:src="@drawable/my_logo"
+                android:layout_below="@+id/logo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.32" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:layout_weight="0.13"
+            android:id="@+id/ll3">
+
+            <TextView
+                android:text="A One Stop Solution for"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tagline1"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:text="all your queries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tagline2"
+                android:layout_marginTop="16dp"
+                android:textSize="25dp"
+                android:layout_below="@+id/tagline1"
+                android:layout_alignLeft="@+id/tagline1"
+                android:layout_alignStart="@+id/tagline1"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="221dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.61"
+            android:id="@+id/ll4">
+
+            <Button
+                android:text="Sign in!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signin"
+                android:layout_below="@+id/tagline2"
+                android:layout_marginTop="54dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif"
+                android:background="#FAA405" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
